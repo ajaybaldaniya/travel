@@ -1,0 +1,1024 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Merriweather:wght@400;700&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-color: black;
+    height: 30px;
+}
+
+
+/* lato-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/lato-v23-latin-300.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato-v23-latin-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/lato-v23-latin-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato-v23-latin-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/lato-v23-latin-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato-v23-latin-300.svg#Lato') format('svg');
+    /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v23-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/lato-v23-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato-v23-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/lato-v23-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato-v23-latin-regular.svg#Lato') format('svg');
+    /* Legacy iOS */
+}
+
+/* lato-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v23-latin-900.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato-v23-latin-900.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/lato-v23-latin-900.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato-v23-latin-900.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/lato-v23-latin-900.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato-v23-latin-900.svg#Lato') format('svg');
+    /* Legacy iOS */
+}
+
+/* merriweather-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/merriweather-v30-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/merriweather-v30-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/merriweather-v30-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/merriweather-v30-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/merriweather-v30-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/merriweather-v30-latin-regular.svg#Merriweather') format('svg');
+    /* Legacy iOS */
+}
+
+/* merriweather-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/merriweather-v30-latin-900.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/merriweather-v30-latin-900.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/merriweather-v30-latin-900.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/merriweather-v30-latin-900.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/merriweather-v30-latin-900.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/merriweather-v30-latin-900.svg#Merriweather') format('svg');
+    /* Legacy iOS */
+}
+
+
+/* ================================== Default CSS ================================== */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato';
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.justify_between {
+    justify-content: space-between;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.d-flex_warp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section_space {
+    padding: 124px 0;
+}
+
+.section-space {
+    padding: 62px 0;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --yellow: #FAA61A;
+    --gray: #7f7f7f;
+}
+
+
+/* =============== Custom css ============== */
+
+
+
+.add i {
+    margin-right: 10px;
+}
+
+.add li {
+    font-size: 15px;
+}
+
+.add i:last-child {
+    margin-left: 25px;
+}
+
+.theme {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 0;
+}
+
+.social_info i {
+    color: var(--white);
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+.last i {
+    color: #fff;
+}
+
+.last p {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.logo span {
+    color: var(--yellow);
+}
+
+.logo i {
+    transform: rotate(45deg);
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.pdg1 li {
+    padding: 8px 24px;
+}
+
+.menu li a {
+    transition: .2s;
+    font-weight: bold;
+    color: var(--black);
+
+}
+
+.rel {
+    position: relative;
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.menu {
+    padding: 15px 10px;
+}
+
+.menu li:hover a {
+    color: var(--yellow);
+}
+
+.search i {
+    border: 1px solid #FAA61A;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--yellow);
+}
+
+.menu .active a {
+    color: var(--yellow) !important;
+    padding: 10px;
+    border-bottom: 4px solid #FAA61A;
+}
+
+.item .img1 {
+    height: 100vh;
+}
+
+.slider {
+    background-image: url(../img/img.jpg);
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+.text h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.text h3 {
+    background-color: var(--yellow);
+    font-size: 18px;
+    padding: 6px 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.text p {
+    color: var(--white);
+    width: 520px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.heading h2 {
+    text-align: center;
+    margin-bottom: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 36px;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: var(--yellow);
+    margin: 0 auto;
+    border: none;
+}
+
+.main-img {
+    position: relative;
+    width: 360px;
+}
+
+.over {
+    overflow: hidden;
+}
+
+.main-img img {
+    transition: .3s;
+    display: block;
+}
+
+.main-img:hover:hover img {
+    transform: scale(1.2);
+}
+
+.main-img:hover:hover .info {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #000000a1;
+}
+
+.main-img:hover:hover .layer {
+    transform: translateY(-10px);
+}
+
+.layer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    width: 360px;
+    height: 35px;
+    transition: .3s;
+}
+
+.layer i {
+    background-color: var(--yellow);
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+.info {
+    background-color: #ebebeb;
+    padding: 20px 10px;
+    width: 360px;
+    text-align: center;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.info a {
+    color: #000;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.info p {
+    color: var(--gray);
+    font-size: 1.17em;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.rating i {
+    color: var(--yellow);
+}
+
+.rating .gry {
+    color: #7f7f7f;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 47%;
+    left: -3%;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 47%;
+    right: -3%;
+}
+
+.owl-carousel .owl-nav button.owl-next i {
+    background: var(--yellow);
+    color: var(--white);
+    padding: 10px;
+}
+
+.owl-carousel .owl-nav button.owl-prev i {
+    background: var(--yellow);
+    color: var(--white);
+    padding: 10px;
+}
+
+.btn1 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.btn1 a {
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 15px;
+    padding: 10px 50px;
+    transition: .3s;
+}
+
+.btn1:hover a {
+    background-color: var(--yellow);
+}
+
+.color {
+    background-color: var(--yellow);
+    padding: 86px 0;
+}
+
+.iner {
+    width: 25%;
+    text-align: center;
+}
+
+.iner_text i {
+    color: var(--white);
+    background-color: var(--black);
+    height: 70px;
+    width: 65px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 28px;
+    font-size: 35px;
+    transition: .3s;
+    border: 4px solid transparent;
+}
+
+.iner_text:hover i {
+    background-color: var(--yellow);
+    transform: rotateY(180deg);
+    border: 4px solid #000;
+}
+
+.iner_text h1 {
+    margin-bottom: 6px;
+}
+
+.iner_text p {
+    font-size: 14px;
+}
+
+.iner {
+    margin: 0px 10px;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+.right {
+    background-color: #F1F2F2;
+    padding: 80px 20px 69px;
+    text-align: center;
+}
+
+.right h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.right h2 {
+    font-size: 55px;
+    font-weight: 100;
+    margin-bottom: 26px;
+    line-height: 1.25em;
+}
+
+.right p {
+    font-size: 20px;
+    color: #949494;
+    margin-bottom: 60px;
+}
+
+.right .Details {
+    background-color: #a7a7a7;
+    padding: 11px 31px;
+}
+
+.btn2 {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+    margin: 8px;
+}
+
+.right .book {
+    background-color: var(--yellow);
+    padding: 11px 31px;
+    display: inline-block;
+}
+
+.book:hover {
+    background-color: var(--black);
+}
+
+.Details:hover {
+    background-color: var(--black);
+}
+
+.owl-carousel .owl-nav button.owl-prev .s3 {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000b6;
+    border-radius: 50%;
+    padding: 20px;
+
+}
+
+.owl-carousel .owl-nav button.owl-next .s33 {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000b6;
+    border-radius: 50%;
+    padding: 20px;
+
+}
+
+.gray {
+    background-color: #EDEDED;
+}
+
+.tour-heading h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    font-family: 'Merriweather', serif;
+}
+
+/* .off-in {
+    height: 100%;
+}
+
+.left {
+    height: 100%;
+}
+
+.tour {
+    height: 100%;
+}
+
+.slide {
+    height: 100%;
+}
+#slider3{
+    height: 100%;
+}
+#slider3 .item img {
+    height: 100%;
+} */
+.owl-theme .owl-nav {
+    margin-top: 0 !important;
+}
+.tour-heading {
+    margin-bottom: 40px;
+}
+
+.full-table {
+    width: 33.33%;
+    text-align: center;
+    margin-top: 30px;
+    margin: 10px;
+    transition: .3s;
+}
+
+.full-table:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 10px #dadada;
+}
+
+.table-heading {
+    background-color: var(--yellow);
+    padding: 51px 20px;
+}
+
+.table-heading h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.table-heading h2 {
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.pkg-features {
+    padding: 30px 48px 53px 48px;
+    background-color: #fff;
+}
+
+.pdg li {
+    color: #7c7c7c;
+    font-size: 14px;
+    padding: 8px 24px;
+    border-bottom: 1px solid #d1d3d4;
+}
+
+.pdg li:last-child {
+    border: none;
+}
+
+.btn3 {
+    padding: 10px 28px;
+    font-size: 14px;
+    background: #313131;
+    color: #fff;
+    border: none;
+    margin-top: 42px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn3:hover {
+    background-color: var(--yellow);
+}
+
+.r {
+    width: 33.33%;
+    margin: 0px 10px;
+}
+
+.f {
+    align-items: center;
+}
+
+.f i {
+    color: var(--yellow);
+    font-size: 60px;
+    margin-right: 25px;
+}
+
+.plen {
+    transform: rotate(-45deg);
+}
+
+.f-in span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #808285;
+    line-height: 1.5em;
+}
+
+.f-in p {
+    color: #808285;
+    margin-top: -8px;
+}
+
+.bg-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img1.jpg) center center;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.testi {
+    text-align: center;
+    color: #fff;
+}
+
+.testi h2 {
+    margin-bottom: 15px;
+    font-size: 52px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+#slider4 {
+    text-align: center;
+    color: var(--white);
+}
+
+#slider4 h4 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.star i {
+    color: var(--yellow);
+}
+
+.star i:last-child {
+    color: #f7e8e8;
+}
+
+.name {
+    margin: 20px 0;
+}
+
+.item img {
+    object-fit: cover;
+    background-position: center;
+}
+
+.img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.img11 {
+    background-image: url(../img/asset\ 6.jpeg);
+}
+
+.img22 {
+    background-image: url(../img/asset\ 7.jpeg);
+}
+
+.img33 {
+    background-image: url(../img/asset\ 8.jpeg);
+}
+
+.bg-img1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img2.jpg) 50% 50%;
+}
+
+.contact h1 {
+    text-align: center;
+    color: var(--white);
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    font-family: 'Merriweather', serif;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+.in-left {
+    width: 55%;
+}
+
+.in-right {
+    width: 45%;
+}
+
+.in-left {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 50px 30px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.f-name input {
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px 35px;
+}
+
+.f-name input:first-child {
+    margin-right: 25px;
+}
+
+.f-name {
+    position: relative;
+}
+
+.f-name .fn {
+    position: absolute;
+    left: 10px;
+    top: 28%;
+    color: #7c7c7c;
+}
+
+.f-name .ln {
+    position: absolute;
+    left: 294px;
+    top: 28%;
+    color: #7c7c7c;
+}
+
+.email input {
+    width: 98%;
+    margin-right: 10px;
+    padding: 10px 35px;
+    margin-top: 10px;
+}
+
+.email {
+    position: relative;
+}
+
+.eml {
+    position: absolute;
+    top: 39%;
+    left: 10px;
+    color: #7c7c7c;
+}
+
+.area {
+    padding: 12px;
+    padding-left: 35px;
+    margin-top: 10px;
+}
+
+.text-area1 {
+    position: relative;
+}
+
+.pn {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: #7c7c7c;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.btn4 {
+    height: 45px;
+    background-color: var(--yellow);
+    width: 98%;
+    margin: 10px;
+    margin-left: 0;
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn4:hover {
+    background-color: var(--black);
+}
+
+.in-right {
+    padding: 0 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.con-info p {
+    color: var(--white);
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.con-info i {
+    font-size: 40px;
+}
+
+.con-info {
+    color: var(--yellow);
+    padding: 31px 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.con-info:last-child {
+    margin-bottom: 0;
+}
+
+.con-info::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 79%;
+    background-color: var(--yellow);
+}
+
+.con-info::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 89%;
+    height: 1px;
+    background-color: var(--yellow);
+}
+
+.bdr::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 79%;
+    background-color: var(--yellow);
+}
+
+.bdr::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 89%;
+    height: 1px;
+    background-color: var(--yellow);
+}
+.bg-clr {
+    background-color: #231F20;
+    padding: 86px 0;
+}
+.f-left {
+    width: 40%;
+}
+.f-left h1 {
+    color: var(--white);
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+.f-left p {
+    color: var(--gray);
+    font-size: 15px;
+    padding-right: 30px;
+    line-height: 1.72em;
+}
+.icn {
+    margin-top: 20px;
+}
+.icn i {
+    margin: 10px;
+    font-size: 20px;
+    color: var(--gray);
+    transition: .3s;
+}
+.icn i:hover {
+    color: var(--yellow);
+}
+.map img {
+    width: 597px;
+    height: 276px;
+    margin-left: 53px;
+    margin-right: 15px;
+    border: 8px solid #ffff;
+}
+.p-clr {
+    background-color: #0A0909;
+    padding: 35px 0;
+}
+.information {
+    justify-content: space-between;
+    color: var(--gray);
+}
+.aa {
+    display: flex;
+}
+.aa a {
+    color: var(--gray);
+} 
+.aa p {
+    margin: 0px 10px;
+}
+.aa a:hover {
+    text-decoration: underline;
+}
